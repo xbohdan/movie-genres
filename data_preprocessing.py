@@ -1,15 +1,9 @@
-from heapq import merge
 import pandas as pd
-import numpy as np
 import json
 import nltk
 import re
 import csv
-import matplotlib.pyplot as plt 
-import seaborn as sns
 from tqdm import tqdm
-from sklearn.feature_extraction.text import TfidfVectorizer
-from sklearn.model_selection import train_test_split
 from nltk.corpus import stopwords
 
 # load movie.metadata.tsv
@@ -87,5 +81,5 @@ def remove_stopwords(text):
 # remove stop words from the plot
 merged['Plot'] = merged['Plot'].apply(lambda l: remove_stopwords(l))
 
-# save the dataframe as cvs file
-merged.to_csv('final_dataset.csv')
+# save the dataframe as csv file
+merged.to_csv('preprocessed_dataset.csv', index=False)
