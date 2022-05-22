@@ -3,16 +3,22 @@
 ## Prerequisites
 - [Python](https://www.python.org/) (recommended version >= v3.10.2)
 - [pipenv](https://pypi.org/project/pipenv/) (`pip install pipenv`)
+- Configure Jupyter Notebook environment (recommended: [Visual Studio Code](https://code.visualstudio.com/docs/datascience/jupyter-notebooks))
 
 ## Usage
 
 1. Clone this repository
-2. Install all dependencies via the command line:
-> pipenv install
-3. Enter the virtual environment:
+2. Enter the virtual environment:
 > pipenv shell
-4. To execute `data_preprocessing.py` script, you need to download the dataset [CMU Movie Summary Corpus](http://www.cs.cmu.edu/~ark/personas/), then unpack `movie.metadata.tsv` and `plot_summaries.txt` files to the root folder of this project. Then, run the script via the command line:
-> python data_preprocessing.py
-  
-5. To execute `feature_extraction.py` script, you need to perform the step 3, or download the [preprocessed dataset](https://drive.google.com/drive/folders/12H30LY4YFlnDAL3fwjG4nYeNCAmWNeZR?usp=sharing). Put the `preprocessed_dataset.csv` into the root folder. Then, run the script via the command line:
-> python feature_extraction.py
+3. Install all dependencies via the command line:
+> pipenv install
+4. Execute blocks of code in your environment
+
+## Notes
+
+- You can skip the part 1 - preprocessing
+- Read carefully block 3.1, before executing it
+- We built 2 models: one for general genres and one for specific genres
+- You can test both models in the part 5 - paste the plot of movie, execute the block and output will be `"General genre, Specific genre"`
+- General genres: Animation, Monochrome, Short Film, Documentary, Family, Adventure, Action, Thriller, Drama
+- Specific genres: Horror, Musical, Fantasy, War, Biography, Science Fiction, Crime, Romance, Mystery, Comedy
