@@ -16,6 +16,8 @@
 
 ## Notes
 
+- Dataset - [CMU Movie Summary Corpus](http://www.cs.cmu.edu/~ark/personas/)
+- Preprocessed dataset - [Preprocessed dataset](https://drive.google.com/file/d/1U-CGGvlc3z3ayk2_qd-uOyUPiNkvsSjj/view?usp=sharing)
 - You can skip the part 1 - preprocessing
 - Read carefully block 3.1, before executing it
 - We built 2 models: one for general genres and one for specific genres
