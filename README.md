@@ -9,10 +9,14 @@
 
 1. Clone this repository
 2. Enter the virtual environment:
-> pipenv shell
-3. Install all dependencies via the command line:
-> pipenv install
-4. Execute blocks of code in your environment
+```
+pipenv shell
+```
+4. Install all dependencies via the command line:
+```
+pipenv install
+```
+6. Execute blocks of code in your environment
 
 ## Notes
 
